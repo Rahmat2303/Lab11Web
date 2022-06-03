@@ -61,7 +61,7 @@ Untuk mengetahui route yang ditambahkan sudah benar, buka CLI dan jalankan perin
 
 Sebelum akses, aktifkan dahulu servernya dengan membuka cmd kemudian ketikkan **php spark serve** seperti gambar dibawah
 
-![Gambar 6](screenshot/sserver.png)
+![Gambar](screenshot/sserver.png)
 
 Kemudian coba akses route yang telah dibuat dengan mengakses alamat url http://localhost:8080/about Ketika di akses maka akan muncul tampilan error 404 not found, karena file tersebut belum ada isinya.
 
