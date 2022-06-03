@@ -39,7 +39,7 @@ Untuk mengakses CLI buka terminal/command prompt. Arahkan lokasi direktori sesua
 ![Gambar 2](screenshot/ss1b.png)
 
 Untuk memudahkan mengetahui jenis errornya, maka perlu diaktifkan mode debugging dengan mengubah nilai konfigurasi
-pada environment variable CI_ENVIRINMENT menjadi development dan Ubah nama file env menjadi .env.
+pada environment variable CI_ENVIRONMENT menjadi development dan Ubah nama file env menjadi .env.
 
 Untuk mencoba error tersebut, ubah kode pada file app/Controller/Home.php hilangkan titik koma pada akhir kode. Contoh error yang terjadi seperti gambar dibawah.
 
@@ -59,7 +59,11 @@ Untuk mengetahui route yang ditambahkan sudah benar, buka CLI dan jalankan perin
 
 ![Gambar 5](screenshot/ss2b.png)
 
-Coba akses route yang telah dibuat dengan mengakses alamat url http://localhost:8080/about Ketika di akses maka akan muncul tampilan error 404 not found, karena file tersebut belum ada isinya.
+Sebelum akses, aktifkan dahulu servernya dengan membuka cmd kemudian ketikkan **php spark serve** seperti gambar dibawah
+
+![Gambar 6](screenshot/sserver.png)
+
+Kemudian coba akses route yang telah dibuat dengan mengakses alamat url http://localhost:8080/about Ketika di akses maka akan muncul tampilan error 404 not found, karena file tersebut belum ada isinya.
 
 ![Gambar 6](screenshot/ss2c.png)
 
