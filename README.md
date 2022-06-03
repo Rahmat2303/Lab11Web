@@ -29,4 +29,4 @@ Ini langkah-langkahnya :
 
 Seperti ini tampilannya di browser.
 
-![Gambar 1](lab11_ci/ci4/public/screenshot/ss1a.png)
+![Gambar 1](screenshot/ss1a.png)
