@@ -315,3 +315,102 @@ Ini tampilannya di browser
 Tambahkan fungsi/method baru pada Controller Artikel dengan nama delete().
 
 ![Gambar 24](screenshot2/ss8a.png)
+
+## Lanjutan praktikum
+
+### Membuat Tabel: User Login
+
+### Membuat Tabel User
+
+Buat tabel di database sebelumnya. Ini syntax untuk membuat tabel
+
+**CREATE TABLE user (**
+
+**id INT(11) auto_increment,**
+
+**username VARCHAR(200) NOT NULL,**
+
+**useremail VARCHAR(200),**
+
+**userpassword VARCHAR(200),**
+
+**PRIMARY KEY(id)**
+
+**);**
+
+Setelah tabel dibuat lanjut membuat model.
+
+### Membuat Model User
+
+Buat file baru pada direktori app/Models dengan nama UserModel.php
+
+![Gambar 1](screenshot3/ss1a.png)
+
+Setelah itu buat controller
+
+### Membuat Controller User
+
+Pada direktori app/Controllers buat file dengan nama User.php dan kemudian tambahkan method index() untuk menampilkan daftar user, dan method login() untuk proses login.
+
+Seperti ini kodenya
+
+![Gambar 2](screenshot3/ss1b.png)
+![Gambar 3](screenshot3/ss1c.png)
+
+Kemudian membuat view atau tampilan login
+
+### Membuat View Login
+
+Buat direktori baru dengan nama user pada direktori app/views, kemudian buat file baru dengan nama login.php.
+
+Disini saya melakukan improvisasi dengan menambahkan bootstrap pada view login.
+
+![Gambar 4](screenshot3/ss1d.png)
+
+### Membuat Database Seeder
+
+Jadi database seeder ini untuk uji coba modul login, yang dimana kita perlu memasukkan data user dan password kedaalam database. Untuk itu buat database seeder untuk tabel user. Buka CLI/CMD, sebelemun itu kita harus mengarahkan ke folder CI kita, kemudian tulis perintah **php spark make::seeder UserSeeder** seperti berikut:
+
+![Gambar 5](screenshot3/ss1e.png)
+
+Selanjutnya, buka file UserSeeder.php yang berada di lokasi direktori /app/Database/Seeds/UserSeeder.php kemudian isi dengan kode berikut:
+
+![Gambar 6](screenshot3/ss1f.png)
+
+Selanjutnya buka kembali CLI dan ketik perintah berikut:
+
+![Gambar 7](screenshot3/ss1g.png)
+
+### Uji Coba Login
+
+Selanjutnya buka url http://localhost:8080/user/login seperti berikut:
+
+Ini tampilannya di browser
+
+![Gambar 8](screenshot3/ss1h.png)
+
+### Menambahkan Auth Filter
+
+Buat file baru dengan nama Auth.php pada direktori app/Filters. Isi dengan kode berikut,
+
+![Gambar 9](screenshot3/ss2a.png)
+
+Selanjutnya buka file app/Config/Filters.php tambahkan kode berikut **'auth' => \App\Filters\Auth::class**:
+
+![Gambar 10](screenshot3/ss2f.png)
+
+Selanjutnya buka file app/Config/Routes.php dan sesuaikan kodenya.
+
+![Gambar 11](screenshot3/ss2c.png)
+
+### Percobaan Akses Menu Admin
+
+Buka url dengan alamat http://localhost:8080/admin/artikel ketika alamat tersebut diakses maka, akan dimuculkan halaman login.
+
+![Gambar 12](screenshot3/ss2d.png)
+
+### Fungsi Logout
+
+Tambahkan method logout pada Controller User seperti berikut:
+
+![Gambar 13](screenshot3/ss2e.png)
