@@ -29,12 +29,12 @@ header h1 {
 }
 
 /* Navigasi */
-nav {
+.navigasi {
   display: block;
   background-color: #1f5faa;
   margin-bottom: 10px;
 }
-nav a {
+.navigasi a {
   padding: 15px 30px;
   display: inline-block;
   color: #ffffff;
@@ -42,9 +42,31 @@ nav a {
   text-decoration: none;
   font-weight: bold;
 }
+.navigasi a.active,
+.navigasi a:hover {
+  background-color: #2b83ea;
+  color: #ffffff;
+}
+
+/* untuk pagination */
+nav {
+  display: inline-block;
+  background-color: #1f5faa;
+  margin-bottom: 10px;
+}
+nav a {
+  padding: 10px;
+  display: inline-block;
+  color: #ffffff;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 nav a.active,
 nav a:hover {
   background-color: #2b83ea;
+  color: #ffffff;
 }
 
 /* Hero */

@@ -414,3 +414,60 @@ Buka url dengan alamat http://localhost:8080/admin/artikel ketika alamat tersebu
 Tambahkan method logout pada Controller User seperti berikut:
 
 ![Gambar 13](screenshot3/ss2e.png)
+
+# Lanjutan praktikum
+
+## Praktikum 14: Pagination dan Pencarian
+
+### Membuat Pagination
+
+Buka Kembali Controller Artikel, kemudian modifikasi kode pada method admin_index seperti berikut.
+
+![Gambar 1](screenshot4/ss1a.png)
+
+Kemudian buka file views/artikel/admin_index.php dan tambahkan kode berikut
+dibawah deklarasi tabel data.
+
+![Gambar 2](screenshot4/ss1c.png)
+
+Berhubung data saya cuma ada 2, jadi paginate(10) saya ganti nilainya dengan paginate(1) agar tampilannya seperti berikut.
+
+![Gambar 3](screenshot4/ss1b.png)
+
+### Membuat Pencarian
+
+Buka kembali Controller Artikel, pada method admin_index ubah kodenya seperti berikut.
+
+![Gambar 4](screenshot4/ss2a.png)
+
+Buka kembali file views/artikel/admin_index.php dan tambahkan form
+pencarian sebelum deklarasi tabel seperti berikut:
+
+![Gambar 5](screenshot4/ss2b.png)
+
+Dan pada link pager ubah seperti berikut.
+
+![Gambar 6](screenshot4/ss2c.png)
+
+Ini tampilannya di browser dengan mengetikan kata kunci tertentu.
+
+![Gambar 7](screenshot4/ss2d.png)
+
+### Upload Gambar
+
+Buka kembali Controller Artikel, sesuaikan kode pada method add seperti berikut:
+
+![Gambar 8](screenshot4/ss3a.png)
+
+Kemudian pada file views/artikel/form_add.php tambahkan field input file seperti
+berikut.
+
+![Gambar 9](screenshot4/ss3b.png)
+
+Tambahkan ecrypt type pada tag form seperti berikut.
+
+![Gambar 10](screenshot4/ss3c.png)
+
+Ini tampilannya di browser.
+
+![Gambar 11](screenshot4/ss3d.png)

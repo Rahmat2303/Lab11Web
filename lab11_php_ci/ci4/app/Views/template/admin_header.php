@@ -13,8 +13,9 @@
         <header>
             <h1>Admin Portal Berita</h1>
         </header>
-        <nav>
+        <nav class="navigasi">
             <a href="<?= base_url('/'); ?>" class="active">Dashboard</a>
-            <a href="<?= base_url('/article'); ?>">Artikel</a>
+            <a href="<?= base_url('/admin/artikel'); ?>">Artikel</a>
             <a href="<?= base_url('/admin/artikel/add'); ?>">Tambah Artikel</a>
+            <a href="<?= base_url('/user/login'); ?>">Logout</a>
         </nav>

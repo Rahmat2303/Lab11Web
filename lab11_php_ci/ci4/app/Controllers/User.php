@@ -38,7 +38,7 @@ class User extends BaseController
                     'user_email' => $login['useremail'],
                     'logged_in' => TRUE,
                 ];
-                $session = set($login_data);
+                $session->set($login_data);
                 return redirect('admin/artikel');
             }
             else
